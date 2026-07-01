@@ -4,8 +4,10 @@ cask "worklog" do
 
   url "https://github.com/NoirVoider/worklog/releases/download/v#{version}/Worklog_#{version}_aarch64.dmg"
   name "Worklog"
-  desc "A native-feeling macOS Markdown worklog app"
+  desc "Native-feeling Markdown worklog app"
   homepage "https://github.com/NoirVoider/worklog"
+
+  depends_on :macos
 
   app "Worklog.app"
 
